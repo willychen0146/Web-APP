@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-header {
+    text-align: center; /* Aligns content center horizontally */
+    font-size: 50px;
+    flex: auto;
+}
+
+.button {
+    background-color: #0d400f;
+    border: 2px solid #000; /* 外框 */
+    border-radius: 15px; /* 圓角半徑 */
+    padding: 10px 20px; /* 按鈕內邊距 */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    flex: none;
+    width: 100px;
+}
+
+.back-button {
+    background-color: #0d400f;
+    border: 2px solid #000; /* 外框 */
+    border-radius: 15px; /* 圓角半徑 */
+    padding: 10px 20px; /* 按鈕內邊距 */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    flex: none;
+    width: 100px;
+}
+
+#menuList {
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    background-color: #98ee9b;
+    padding: 10px;
+    border: 2px solid #000; /* 外框 */
+    border-radius: 15px; /* 圓角半徑 */
+}
+
+#menuList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menuList ul li {
+    margin-bottom: 5px;
+}
+
+#menuList ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive web design */
+/* @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+} */
+
