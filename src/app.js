@@ -1,6 +1,8 @@
 // app.js
-const menuButton = document.getElementById('menuButton');
-const menuList = document.getElementById('menuList');
+import { $ } from "./dollars.js";
+
+const menuButton = $('#menuButton');
+const menuList = $('#menuList');
 
 menuButton.addEventListener('click', function() {
     menuList.classList.toggle('hidden');
