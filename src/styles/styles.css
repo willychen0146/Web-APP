@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: azure;
 }
 
 header {
@@ -10,6 +11,14 @@ header {
     color: #fff;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    line-height: 2;
 }
 
 nav ul {
@@ -32,6 +41,35 @@ main {
     padding: 20px;
 }
 
+section {
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto; /* Center the table */
+  }
+  
+th, td {
+padding: 8px;
+text-align: left;
+border: 1px solid #ddd; /* Add a border to table cells */
+}
+
+th {
+background-color: #b6b1b1a9;
+}
+
+td {
+background-color: #e9d5f0a9;
+}
+
+th:first-child, td:first-child {
+    width: 300px; /* Adjust the value as needed */
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -39,14 +77,20 @@ footer {
     text-align: center;
 }
 
+.anime-title{
+    padding: 20px;
+}
+
 .hidden {
     display: none;
 }
 
 .main-header {
+    font-weight: bold;
     text-align: center; /* Aligns content center horizontally */
     font-size: 50px;
     flex: auto;
+    flex-grow: 1; /* This will make the main-header div take up the remaining space */
 }
 
 .button {
