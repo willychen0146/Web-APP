@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(221, 231, 240);
+    color: #333;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -77,6 +77,17 @@ footer {
     text-align: center;
 }
 
+.section-block {
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px; 
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-top: 100px;
+    margin-left : 300px; 
+    margin-right : 300px; 
+}
+
 .anime-title{
     padding: 20px;
 }
@@ -91,44 +102,41 @@ footer {
     font-size: 50px;
     flex: auto;
     flex-grow: 1; /* This will make the main-header div take up the remaining space */
+    padding-left: 10px;
 }
 
-.button {
-    background-color: #0d400f;
-    border: 2px solid #000; /* 外框 */
-    border-radius: 15px; /* 圓角半徑 */
-    padding: 10px 20px; /* 按鈕內邊距 */
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+#menuButton {
+    background: none;
+    border: none;
+    padding: 0; /* Reset padding */
     cursor: pointer;
-    flex: none;
-    width: 100px;
 }
 
-.back-button {
-    background-color: #0d400f;
-    border: 2px solid #000; /* 外框 */
-    border-radius: 15px; /* 圓角半徑 */
-    padding: 10px 20px; /* 按鈕內邊距 */
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
+#menuButton img {
+    display: block; /* Ensure the image takes up the entire button space */
+}
+
+#backButton {
+    background: none;
+    border: none;
+    padding: 0; /* Reset padding */
     cursor: pointer;
-    flex: none;
-    width: 100px;
+}
+
+#backButton img {
+    display: block; /* Ensure the image takes up the entire button space */
 }
 
 #menuList {
     position: absolute;
-    left: 15px;
     top: 80px;
-    background-color: #98ee9b;
     padding: 10px;
-    border: 2px solid #000; /* 外框 */
     border-radius: 15px; /* 圓角半徑 */
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1;
 }
 
 #menuList ul {

@@ -10,33 +10,54 @@
 <body>
     <div id="menuList" class="hidden">
         <ul>
-            <li><a href="#Home">Home</a></li>
+            <li><a href="#Introduction">Introduction</a></li>
             <li><a href="#About">About</a></li>
+            <li><a href="#Anime-List">Anime-List</a></li>
             <li><a href="#Services">Services</a></li>
             <li><a href="#Contact">Contact</a></li>
         </ul>
     </div>
 
     <header>
-        <button id="menuButton" class="button">Menu</button>
-        <button class="back-button">
+        <!-- <button id="menuButton" class="button">Menu</button> -->
+        <button id="backButton">
             <a href="https://www.google.com/">
-                <img src="https://img-qn.51miz.com/Element/00/41/50/42/2ebc02ec_E415042_b0f0ef9b.png!/quality/90/unsharp/true/compress/true/format/png/fw/50" height="22px">
+                <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" height="50px" width="50px">
             </a>
         </button>
         <div class="main-header">
-            <div>我的個人論壇</div>
-        </div>   
+            <div>NoMercySusie 的個人論壇</div>
+        </div>
+        <button id="menuButton">
+            <img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_2_icon-icons.com_71856.png" height="60px">
+        </button>
     </header>
 
     <main style="text-align: center;">
         <section>
             <h1>歡迎來到我的論壇</h1>
-            <p>這是一個關於我日常生活等趣事的論壇 ~</p>
+            <p>這是一個收錄關於我日常生活等各種趣事的論壇 ~</p>
+            <p>我的日常生活是由遊戲、動畫和程式設計所組成的~</p>
             <img  src="https://i.imgur.com/NVtSdwf.png" alt="A simple website">
         </section>
 
-        <h2>My Top Love Anime List</h2>
+        <div id="Introduction" class="section-block">
+            <h2><b>介紹</b></h2>
+            <p>歡迎來到我的個人網站!</p>
+            <p>這裡是我分享生活點滴和個人興趣的地方。不僅有動漫、漫畫推薦等娛樂類內容,也有關於程式設計、網頁設計等技術類主題。希望能在這個小天地與大家交流、分享我的所見所聞。</p>
+        </div>
+
+        <div id="About" class="section-block">
+            <h2>關於我</h2>
+            <p>嗨，大家好！歡迎來到我的部落格，我很高興與大家分享我的日常生活。我是一位熱愛遊戲、動畫和程式設計的人，這些元素構成了我生活中的精彩篇章。這個部落格將帶你進入我的世界，讓你了解我是如何平衡這些興趣，並在日常生活中找到樂趣和啟發的。</p>
+            <p>遊戲：遊戲對我而言不僅僅是一種娛樂，更是一種挑戰和學習的機會。我喜歡各種類型的遊戲，從角色扮演遊戲到戰略遊戲，每一款都能給我帶來新的體驗和收穫。我會分享我最喜愛的遊戲以及我在遊戲中所學到的技能和策略。</p>
+            <p>動畫：動畫是我生活中不可或缺的一部分。從少女戀愛到科幻戰鬥，我喜歡探索各種不同風格和主題的作品。動畫給了我無限的想像空間，也讓我感受到了各種情感和啟示。我會分享我最喜愛的動畫作品以及它們對我生活的影響。</p>
+            <p>程式設計：作為一名程式設計師，我對代碼和創造力的熱愛驅使著我不斷地探索和學習。從網頁開發到機器學習，我喜歡挑戰各種不同的領域，並將自己的想法轉化為現實。我會分享我在程式設計中所遇到的挑戰和成就，並探討未來的發展方向。</p>
+            <p>日常生活：在追求自己的興趣和目標的同時，我也意識到了生活的平衡之道。我會分享我如何安排時間，充分利用每一天，讓自己在遊戲、動畫和程式設計之外還能有更多的收穫和體驗。</p>
+            <p>我希望這個部落格能成為一個與大家交流和分享的平台，讓我們一起探索生活的美好，共同成長和進步。謝謝你們的支持和關注！</p>
+        </div>
+
+        <h2 id="Anime-List">我的動漫推薦列表</h2>
         <table>
           <tr>
             <th>Title</th>
@@ -82,40 +103,37 @@
           </tr>
           <!-- Add more rows for additional anime titles and ratings -->
         </table>
-
-        <div id="Home">
-            <h2>首頁</h2>
-            <p>歡迎來到我的個人網站!這裡是我分享生活點滴和個人興趣的地方。不僅有動漫、漫畫等娛樂類內容,也有關於程式設計、網頁設計等技術類主題。希望能在這個小天地與大家交流、分享我的所見所聞。</p>
-        </div>
         
-        <div id="About">
-            <h2>關於我</h2>
-            <p>我是一位熱愛動漫、漫畫和程式設計的資訊工程師。平時除了工作之外,我也會花時間看動漫、漫畫,或是鑽研一些新的程式語言和技術。我的夢想是有一天能夠開發出一款人氣動漫改編的手機遊戲。</p>
-        </div>
-        
-        <div id="Services">
+        <div id="Services" class="section-block">
             <h2>服務項目</h2>
-            <ul>
+            <!-- <ul> -->
                 <li>網頁設計與開發</li>
                 <li>程式教學</li>
-                <li>動漫、漫畫評論</li>
-            </ul>
+                <li>動漫、漫畫與遊戲評論</li>
+            <!-- </ul> -->
         </div>
         
-        <div id="Contact">
+        <div id="Contact" class="section-block">
             <h2>聯絡方式</h2>
             <p>如果你對我的網站有任何建議或想要合作,歡迎透過以下方式聯繫我:</p>
-            <ul>
-                <li>電子郵件: example@email.com</li>
-                <li>社交媒體: @exampleuser</li>
-            </ul>
+            <!-- <ul> -->
+                <li>
+                    <img src="https://cdn-icons-png.flaticon.com/256/281/281769.png" height="20px">
+                    <span>: willychen0146@gmail.com</span>
+                </li>
+                <li>
+                    <a href="https://github.com/willychen0146">
+                        <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" height="20px">
+                    </a>
+                </li>
+            <!-- </ul> -->
         </div>
     </main>
 
 
 
     <footer>
-        <p>&copy; 2024 Web APP Design</p>
+        <p>&copy; 2024 NoMercySusie</p>
     </footer>
 
     <script type="module" src="app.js"></script>
