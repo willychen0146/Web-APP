@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>關於我</title>
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
+    <!-- menu list -->
     <div id="menuList" class="hidden">
         <ul>
             <li><a href="#Introduction">Introduction</a></li>
@@ -18,46 +20,72 @@
         </ul>
     </div>
 
+    <div id="logInEntrance" class="hidden">
+        <form id="logInForm">
+            <div><h2>Login</h2></div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
     <header>
-        <!-- <button id="menuButton" class="button">Menu</button> -->
+        <!-- back button -->
         <button id="backButton">
-            <a href="https://www.google.com/">
+            <a href="../index.html">
                 <img src="https://cdn-icons-png.flaticon.com/512/3114/3114883.png" height="50px" width="50px">
             </a>
         </button>
+        <!-- main-header -->
         <div class="main-header">
             <div>NoMercySusie 的個人論壇</div>
         </div>
+        <!-- log in button -->
+        <button id="logInButton">
+            <img src="https://cdn-icons-png.flaticon.com/256/310/310818.png" height="30px">
+        </button>
+        <!-- menu button -->
         <button id="menuButton">
             <img src="https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_2_icon-icons.com_71856.png" height="60px">
         </button>
     </header>
 
-    <main style="text-align: center;">
+    <main>
+        <!-- pre-introduction -->
         <section>
-            <h1>歡迎來到我的論壇</h1>
+            <div class="welcomes">歡迎來到我的論壇 ~ ~</div>
             <p>這是一個收錄關於我日常生活等各種趣事的論壇 ~</p>
-            <p>我的日常生活是由遊戲、動畫和程式設計所組成的~</p>
+            <p>我的日常生活是由遊戲、動畫和程式設計所組成的 ~</p>
             <img  src="https://i.imgur.com/NVtSdwf.png" alt="A simple website">
         </section>
 
+        <!-- Introduction -->
+        <div class="sub-title">介紹</div>
         <div id="Introduction" class="section-block">
-            <h2><b>介紹</b></h2>
+            <!-- <h2><b>介紹</b></h2> -->
             <p>歡迎來到我的個人網站!</p>
-            <p>這裡是我分享生活點滴和個人興趣的地方。不僅有動漫、漫畫推薦等娛樂類內容,也有關於程式設計、網頁設計等技術類主題。希望能在這個小天地與大家交流、分享我的所見所聞。</p>
+            <p>這裡是我分享生活點滴和個人興趣的地方。不僅有動漫、漫畫推薦等娛樂內容,也有關於程式設計、網頁設計等技術類主題。希望能在這個與大家交流、分享我的所見所聞。</p>
         </div>
 
+        <!-- About -->
+        <div class="sub-title">關於我</div>
         <div id="About" class="section-block">
-            <h2>關於我</h2>
-            <p>嗨，大家好！歡迎來到我的部落格，我很高興與大家分享我的日常生活。我是一位熱愛遊戲、動畫和程式設計的人，這些元素構成了我生活中的精彩篇章。這個部落格將帶你進入我的世界，讓你了解我是如何平衡這些興趣，並在日常生活中找到樂趣和啟發的。</p>
-            <p>遊戲：遊戲對我而言不僅僅是一種娛樂，更是一種挑戰和學習的機會。我喜歡各種類型的遊戲，從角色扮演遊戲到戰略遊戲，每一款都能給我帶來新的體驗和收穫。我會分享我最喜愛的遊戲以及我在遊戲中所學到的技能和策略。</p>
-            <p>動畫：動畫是我生活中不可或缺的一部分。從少女戀愛到科幻戰鬥，我喜歡探索各種不同風格和主題的作品。動畫給了我無限的想像空間，也讓我感受到了各種情感和啟示。我會分享我最喜愛的動畫作品以及它們對我生活的影響。</p>
-            <p>程式設計：作為一名程式設計師，我對代碼和創造力的熱愛驅使著我不斷地探索和學習。從網頁開發到機器學習，我喜歡挑戰各種不同的領域，並將自己的想法轉化為現實。我會分享我在程式設計中所遇到的挑戰和成就，並探討未來的發展方向。</p>
-            <p>日常生活：在追求自己的興趣和目標的同時，我也意識到了生活的平衡之道。我會分享我如何安排時間，充分利用每一天，讓自己在遊戲、動畫和程式設計之外還能有更多的收穫和體驗。</p>
-            <p>我希望這個部落格能成為一個與大家交流和分享的平台，讓我們一起探索生活的美好，共同成長和進步。謝謝你們的支持和關注！</p>
+            <p>嗨，大家好！歡迎來到我的部落格，我很高興與大家分享我的日常生活。我是一位熱愛遊戲、動畫和程式設計的人，這些元素構成了我生活中的精彩篇章。這個部落格將帶你進入我的世界，讓你了解我是如何在日常生活中找到種種樂趣和啟發的。</p>
+            <ul>
+            <li class="list">遊戲：遊戲對我而言不僅僅是一種娛樂，更是一種挑戰和學習的機會。我喜歡各種類型的遊戲，從角色扮演遊戲到戰略遊戲，每一款都能給我帶來新的體驗和收穫。我會分享我最喜愛的遊戲以及我在遊戲中所學到的技能和策略。</li>
+            <li class="list">動畫：動畫是我生活中不可或缺的一部分。從少女戀愛到科幻戰鬥，我喜歡探索各種不同風格和主題的作品。動畫給了我無限的想像空間，也讓我感受到了各種情感和啟示。我會分享我最喜愛的動畫作品以及它們對我生活的影響。</li>
+            <li class="list">程式設計：作為一名新鮮人程式設計師，我對程式碼和創造力的熱愛驅使著我不斷地探索和學習。從網頁開發到機器學習，我喜歡挑戰各種不同的領域，並將自己的想法轉化為現實。我會分享我在程式設計中所遇到的挑戰和成就，並探討未來的發展方向。</li>
+            <li class="list">日常生活：在追求自己的興趣和目標的同時，我也意識到了生活的平衡之道。我會分享我如何安排時間，充分利用每一天，讓自己在遊戲、動畫和程式設計之外還能有更多的收穫和體驗。</li>
+            </ul>
+            <p>我希望這個部落格能成為一個與大家交流和分享的地方，讓我們一起探索生活的美好，共同成長和進步。謝謝你們的支持和關注！</p>
+            
         </div>
 
-        <h2 id="Anime-List">我的動漫推薦列表</h2>
+        <!-- 我的動漫推薦列表 -->
+        <div id="Anime-List" class="sub-title">我的動漫推薦列表</div>
         <table>
           <tr>
             <th>Title</th>
@@ -71,7 +99,7 @@
                 <img src="https://gamelife.tw/wp-content/uploads/2022/06/02c6a7db-l.jpg" width="300px" height="200px">
             </td>
             <td>三浦建太郎</td>
-            <td>神作</td>
+            <td>關於黑暗幻想風的戰鬥漫畫</td>
             <td>5</td>
           </tr>
           <tr>
@@ -80,7 +108,7 @@
                 <img src="https://truth.bahamut.com.tw/s01/202103/8d36e89d7062cd11b684bbf01c1ff16b.JPG" width="300px" height="200px">
             </td>
             <td>望月淳</td>
-            <td>神作</td>
+            <td>關於中世紀歐風的劇情漫畫</td>
             <td>4.75</td>
           </tr>
           <tr>
@@ -89,7 +117,7 @@
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgur.com%2FJ3KXmIP.jpg" width="300px" height="200px">
             </td>
             <td>よしだもろへ</td>
-            <td>神作</td>
+            <td>戀愛少女風的京都神仙與人們共同生活的漫畫</td>
             <td>4.5</td>
           </tr>
           <tr>
@@ -98,40 +126,41 @@
                 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Feh96lnrmau.user-space.cdn.idcfcloud.net%2Fuploads%2Ftrix_image%2Fpath%2F7734%2Fb6e548d6-cfd3-495a-ab46-2708abc5f903.jpeg" width="300px" height="200px">
             </td>
             <td>南勝久</td>
-            <td>神作</td>
+            <td>搞笑漫畫</td>
             <td>4</td>
           </tr>
-          <!-- Add more rows for additional anime titles and ratings -->
+          <!-- Can add more row -->
         </table>
         
+        <!-- Services -->
+        <div class="sub-title">服務項目</div>
         <div id="Services" class="section-block">
-            <h2>服務項目</h2>
-            <!-- <ul> -->
-                <li>網頁設計與開發</li>
-                <li>程式教學</li>
-                <li>動漫、漫畫與遊戲評論</li>
-            <!-- </ul> -->
+            <ul>
+                <li class="list">網頁設計與開發</li>
+                <li class="list">程式教學</li>
+                <li class="list">動漫、漫畫與遊戲評論</li>
+            </ul>
         </div>
         
+        <!-- Contact -->
+        <div class="sub-title">聯絡方式</div>
         <div id="Contact" class="section-block">
-            <h2>聯絡方式</h2>
             <p>如果你對我的網站有任何建議或想要合作,歡迎透過以下方式聯繫我:</p>
-            <!-- <ul> -->
-                <li>
-                    <img src="https://cdn-icons-png.flaticon.com/256/281/281769.png" height="20px">
-                    <span>: willychen0146@gmail.com</span>
+            <ul>
+                <li class="list">
+                    <img src="https://cdn-icons-png.flaticon.com/256/281/281769.png" height="16px">
+                    <span>: r11945070@ntu.edu.tw</span>
                 </li>
-                <li>
+                <li class="list">
                     <a href="https://github.com/willychen0146">
                         <img src="https://cdn-icons-png.flaticon.com/256/25/25231.png" height="20px">
                     </a>
                 </li>
-            <!-- </ul> -->
+            </ul>
         </div>
     </main>
 
-
-
+    <!-- footer -->
     <footer>
         <p>&copy; 2024 NoMercySusie</p>
     </footer>

@@ -1,6 +1,9 @@
 /* styles.css */
+/* @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css); */
+
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
+    font-family: 'Roboto';font-size: 22px;
     margin: 0;
     padding: 0;
     background-color: azure;
@@ -39,6 +42,7 @@ nav ul li a {
 
 main {
     padding: 20px;
+    text-align: center;
 }
 
 section {
@@ -53,21 +57,21 @@ table {
   }
   
 th, td {
-padding: 8px;
-text-align: left;
-border: 1px solid #ddd; /* Add a border to table cells */
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
 th {
-background-color: #b6b1b1a9;
+    background-color: #b6b1b1a9;
 }
 
 td {
-background-color: #e9d5f0a9;
+    background-color: #e9d5f0a9;
 }
 
 th:first-child, td:first-child {
-    width: 300px; /* Adjust the value as needed */
+    width: 300px;
 }
 
 footer {
@@ -77,15 +81,41 @@ footer {
     text-align: center;
 }
 
+/* class selector */
+.welcomes{
+    text-shadow: -1px -1px 0 #efe4d1,
+                 1px -1px 0 #efe4d1,
+                 -1px 1px 0 #efe4d1,
+                 1px 1px 0 #efe4d1;
+    /* font-family: monospace; */
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.sub-title{
+    /* 文字鏤空 */
+    -webkit-text-stroke: 1.75px #050b5f;
+    -webkit-text-fill-color: transparent;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    font-weight: bold; 
+}
+
 .section-block {
-    padding: 50px;
-    text-align: center;
+    padding: 25px;
+    text-align: left;
     border-radius: 20px; 
     border: 2px solid black;
-    margin-top: 100px;
-    margin-top: 100px;
-    margin-left : 300px; 
-    margin-right : 300px; 
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left : 150px; 
+    margin-right : 150px; 
+}
+
+.list{
+    padding: 10px;
 }
 
 .anime-title{
@@ -98,40 +128,41 @@ footer {
 
 .main-header {
     font-weight: bold;
-    text-align: center; /* Aligns content center horizontally */
+    text-align: center;
     font-size: 50px;
     flex: auto;
-    flex-grow: 1; /* This will make the main-header div take up the remaining space */
-    padding-left: 10px;
+    flex-grow: 1;
+    padding-left: 70px;
 }
 
+/* id selector */
 #menuButton {
     background: none;
     border: none;
-    padding: 0; /* Reset padding */
+    padding: 0;
     cursor: pointer;
 }
 
 #menuButton img {
-    display: block; /* Ensure the image takes up the entire button space */
+    display: block; /* Let image takes up the entire button space */
 }
 
 #backButton {
     background: none;
     border: none;
-    padding: 0; /* Reset padding */
+    padding: 0;
     cursor: pointer;
 }
 
 #backButton img {
-    display: block; /* Ensure the image takes up the entire button space */
+    display: block; /* Let image takes up the entire button space */
 }
 
 #menuList {
     position: absolute;
     top: 80px;
     padding: 10px;
-    border-radius: 15px; /* 圓角半徑 */
+    border-radius: 15px;
     right: 0;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -152,6 +183,68 @@ footer {
 #menuList ul li a {
     text-decoration: none;
     color: #333;
+}
+
+#logInButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 30px;
+    align-items: center;
+}
+
+#logInButton img {
+    display: block; /* Let image takes up the entire button space */
+}
+
+#logInEntrance {
+    position: absolute;
+    top: 80px;
+    padding: 20px;
+    border-radius: 5px;
+    right: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#logInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logInForm label {
+    margin-bottom: 10px;
+}
+
+#logInForm input[type="text"],
+#logInForm input[type="password"],
+#logInForm input[type="submit"],
+#logInForm input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#logInForm input[type="submit"],
+#logInForm input[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logInForm input[type="submit"]:hover,
+#logInForm input[type="reset"]:hover {
+    background-color: #0056b3;
 }
 
 /* Responsive web design */
