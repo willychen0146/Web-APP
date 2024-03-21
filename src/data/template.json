@@ -1,0 +1,19 @@
+{
+    "header": {
+      "title": "Ani - Thing",
+      "backButton": {
+        "url": "../index.html",
+        "image": "https://cdn-icons-png.flaticon.com/512/3114/3114883.png"
+      },
+      "logInButton": {
+        "image": "https://cdn-icons-png.flaticon.com/256/310/310818.png"
+      },
+      "menuButton": {
+        "image": "https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_2_icon-icons.com_71856.png"
+      }
+    },
+    "footer": {
+      "year": "2024",
+      "author": "NoMercySusie"
+    }
+}

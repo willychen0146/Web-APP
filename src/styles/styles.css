@@ -1,14 +1,16 @@
 /* styles.css */
 /* @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css); */
 
+/* body style */
+/* --------------------------------------------------------- */
 body {
-    /* font-family: 'Noto Sans TC', '微軟正黑體', sans-serif; */
-    font-family: 'Roboto';font-size: 22px;
+    font-family: 'Roboto', 'Noto Sans TC', '微軟正黑體', sans-serif;font-size: 22px;
     margin: 0;
     padding: 0;
     background-color: azure;
 }
-
+/* --------------------------------------------------------- */
+/* header style */
 header {
     background-color: rgb(221, 231, 240);
     color: #333;
@@ -17,7 +19,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+/* --------------------------------------------------------- */
+/* other style */
 p {
     word-break: keep-all;
     overflow-wrap: anywhere;
@@ -77,11 +80,75 @@ th:first-child, td:first-child {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    font-size: 15px;
 }
+/* --------------------------------------------------------- */
 
 /* class selector */
+
+/* --------------------------------------------------------- */
+/* Style the header template */
+
+/* Change the background color on mouse-over */
+.header-left-buttons:hover {
+    background-color: dodgerblue;
+    color: white;
+    /* background-color: #ddd;
+    color: black; */
+}
+  
+/* Style the active/current link*/
+.header-left-buttons.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-left-buttons{
+    border-radius: 20px;
+    padding: 5px 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 80px;
+    font-weight: bold;
+}
+  
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+  
+/* Style the logo link */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo {
+    background: none;
+    border: none;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logo img {
+    display: block; /* Let image takes up the entire button space */
+}
+
+/* --------------------------------------------------------- */
+
+/* other style */
+
+/* --------------------------------------------------------- */
 .welcomes{
     text-shadow: -1px -1px 0 #efe4d1,
                  1px -1px 0 #efe4d1,
@@ -132,7 +199,18 @@ footer {
     font-size: 50px;
     flex: auto;
     flex-grow: 1;
-    padding-left: 70px;
+    padding-right: 220px;
+}
+
+.star {
+    cursor: pointer;
+}
+.star.checked {
+    color: gold;
+}
+
+.footer-link {
+    padding: 10px;
 }
 
 /* id selector */
@@ -144,17 +222,6 @@ footer {
 }
 
 #menuButton img {
-    display: block; /* Let image takes up the entire button space */
-}
-
-#backButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-#backButton img {
     display: block; /* Let image takes up the entire button space */
 }
 
@@ -246,6 +313,9 @@ footer {
 #logInForm input[type="reset"]:hover {
     background-color: #0056b3;
 }
+
+
+/* --------------------------------------------------------- */
 
 /* Responsive web design */
 /* @media (max-width: 768px) {

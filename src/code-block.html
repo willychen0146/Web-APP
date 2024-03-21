@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Platform</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="./styles/code-block.css">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/fold/foldgutter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/show-hint.min.css">
+</head>
+<body>
+    <header></header>
+    <!-- Navigation menu -->
+    <nav id="menuList" class="hidden">
+        <ul>
+            <li><a href="#Introduction">Introduction</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Anime-List">Anime-List</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login form -->
+    <div id="logInEntrance" class="hidden">
+        <form id="logInForm">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <!-- Main content -->
+    <main class="container">
+        <section class="problem-description">
+            <h2>Problem Description</h2>
+            <h3>3Sum</h3>
+            <p>Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.</p>
+            <p>Notice that the order of the output and the order of the triplets does not matter.</p>
+            <p><strong>Example:</strong></p>
+            <p><strong>Input: </strong>[-1, 0, 1, 2, -1, -4],</p>
+            <p><strong>Output: </strong>[[-1, 0, 1],[-1, -1, 2]]</p>
+        </section>
+        <section class="code-editor">
+            <h2>Code Editor</h2>
+            <select class="language-selector">
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="javascript">JavaScript</option>
+                <!-- More language -->
+            </select>
+            <textarea id="code-input" placeholder="Type your code here..."></textarea>
+            <button id="run-button">Run</button>
+            <div id="output-container" class="code-output">
+                <!-- Output will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- CodeMirror and its addons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/edit/closebrackets.min.js"></script>
+    <!-- ... other CodeMirror addons ... -->
+    <!-- Custom JavaScript -->
+    <script src="./js/editor.js"></script>
+    <script src="./js/template.js"></script>
+</body>
+</html>
