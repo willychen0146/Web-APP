@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: 'src',
-  server: {
-    open: "/app.html"
-  }
-})
+  root: "src",
+  base: "/Web-APP/",
+  build: {
+    outDir: "../dist",
+  },
+});
