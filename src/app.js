@@ -1,16 +1,17 @@
 // app.js
 import { $ } from "./dollars.js";
 
-const menuButton = $('#menuButton');
-const menuList = $('#menuList');
+const menuButton = $("#menuButton");
+const menuList = $("#menuList");
 
-menuButton.addEventListener('click', function() {
-    menuList.classList.toggle('hidden');
+menuButton.addEventListener("click", function () {
+  menuList.classList.toggle("hidden");
 });
 
-const logInButton = $('#logInButton');
-const logInEntrance = $('#logInEntrance');
+const logInButton = $("#logInButton");
+const logInEntrance = $("#logInEntrance");
 
-logInButton.addEventListener('click', function() {
-    logInEntrance.classList.toggle('hidden');
+logInButton.on("click", function () {
+  logInEntrance.classList.toggle("hidden");
 });
+
