@@ -4,12 +4,10 @@
 // const menuButton = $('#menuButton');
 // const menuList = $('#menuList');
 
-// const menuButton = document.getElementById('menuButton');
-// const menuList = document.getElementById('menuList');
-
-// menuButton.addEventListener('click', function() {
-//     menuList.classList.toggle('hidden');
-// });
+// add base element to assign BASE_URL (i.e. /Web-App/) for rest of the href.
+const base = document.createElement('base')
+base.href = import.meta.env.BASE_URL
+document.head.insertBefore(base, document.head.firstChild)
 
 document.getElementById('menuButton').addEventListener('click', function() {
     var menu = document.getElementById('menuList');
