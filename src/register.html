@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Create an Account</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/register.css">
+</head>
+<body>
+    <header>
+        <!-- back button -->
+        <button class="logo"><a><img></a></button>
+        <div class="headerButtons"></div>
+        <!-- main-header -->
+        <div class="main-header"></div>
+        <!-- log in button -->
+        <button id="logInButton"><img height="30px"></button>
+        <!-- menu button -->
+        <button id="menuButton"><img height="60px"></button>
+        <!-- Navigation menu -->
+        <div id="menuList" class="hidden"><ul></ul></div>
+        <!-- Login form -->
+        <div id="logInEntrance" class="hidden"></div>
+    </header>
+
+    <main>
+        <div class="container">
+        <h2>Create an Account</h2>
+            <form id="registerForm">
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                <div class="error" id="usernameError"></div>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                <div class="error" id="emailError"></div>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                <div class="error" id="passwordError"></div>
+                </div>
+                <div class="form-control">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer><p class="footer-link"></p></footer>
+
+    <script src="./js/template.js"></script>
+    <script src="./js/register.js"></script>
+    </body>
+</html>

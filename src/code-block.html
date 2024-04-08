@@ -3,40 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Coding Platform</title>
     <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="./styles/code-block.css">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles/code-block.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/theme/dracula.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/fold/foldgutter.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/hint/show-hint.min.css">
 </head>
 <body>
-    <header></header>
-    <!-- Navigation menu -->
-    <nav id="menuList" class="hidden">
-        <ul>
-            <li><a href="#Introduction">Introduction</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Anime-List">Anime-List</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Login form -->
-    <div id="logInEntrance" class="hidden">
-        <form id="logInForm">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
-    </div>
+    <header>
+        <!-- back button -->
+        <button class="logo"><a><img></a></button>
+        <div class="headerButtons"></div>
+        <!-- main-header -->
+        <div class="main-header"></div>
+        <!-- log in button -->
+        <button id="logInButton"><img height="30px"></button>
+        <!-- menu button -->
+        <button id="menuButton"><img height="60px"></button>
+        <!-- Navigation menu -->
+        <div id="menuList" class="hidden"><ul></ul></div>
+        <!-- Login form -->
+        <div id="logInEntrance" class="hidden"></div>
+    </header>
 
     <!-- Main content -->
     <main class="container">
@@ -65,7 +57,7 @@
         </section>
     </main>
 
-    <footer></footer>
+    <footer><p class="footer-link"></p></footer>
 
     <!-- CodeMirror and its addons -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/codemirror.min.js"></script>
@@ -75,7 +67,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.63.0/addon/edit/closebrackets.min.js"></script>
     <!-- ... other CodeMirror addons ... -->
     <!-- Custom JavaScript -->
-    <script src="./js/editor.js"></script>
     <script src="./js/template.js"></script>
+    <script src="./js/editor.js"></script>
 </body>
 </html>

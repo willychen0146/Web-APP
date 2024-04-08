@@ -1,0 +1,33 @@
+{
+  "logo": {
+      "link": "../index.html",
+      "imageUrl": "https://cdn-icons-png.flaticon.com/256/25/25694.png",
+      "imgHeight": "50px",
+      "imgWidth": "50px"
+  },
+  "buttons": [
+      {
+          "text": "Course",
+          "link": "code-block.html"
+      },
+      {
+          "text": "Practice",
+          "link": "code-block.html"
+      },
+      {
+          "text": "Note",
+          "link": "../index.html"
+      }
+  ],
+  "mainHeader": "Ani - Thing",
+  "loginButtonImage": "https://cdn-icons-png.flaticon.com/256/310/310818.png",
+  "menuButtonImage": "https://cdn.icon-icons.com/icons2/916/PNG/512/Menu_icon_2_icon-icons.com_71856.png",
+  "menuItems": [
+      {"text": "Menu", "link": "#menuButton"},
+      {"text": "Introduction", "link": "#Introduction"},
+      {"text": "About", "link": "#About"},
+      {"text": "Anime-List", "link": "#Anime-List"},
+      {"text": "Services", "link": "#Services"},
+      {"text": "Contact", "link": "#Contact"}
+  ]
+}

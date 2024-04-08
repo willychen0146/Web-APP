@@ -1,0 +1,25 @@
+{
+    "socialLinks": [
+      {
+        "url": "https://github.com/willychen0146",
+        "imageSrc": "https://cdn-icons-png.flaticon.com/256/25/25231.png"
+      },
+      {
+        "url": "https://www.youtube.com/",
+        "imageSrc": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png"
+      },
+      {
+        "url": "https://www.twitter.com/",
+        "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Twitter_logo.png/256px-Twitter_logo.png"
+      },
+      {
+        "url": "https://www.discord.com/",
+        "imageSrc": "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png"
+      }
+    ],
+    "footerText": {
+      "copyRight": "&copy; 2024 NoMercySusie",
+      "contact": "contact: NoMercySusie@gmail.com"
+    }
+  }
+  

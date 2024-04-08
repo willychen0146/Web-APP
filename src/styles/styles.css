@@ -225,7 +225,7 @@ footer {
     display: block; /* Let image takes up the entire button space */
 }
 
-#menuList {
+/* #menuList {
     position: absolute;
     top: 80px;
     padding: 10px;
@@ -235,9 +235,71 @@ footer {
     border: 1px solid #ccc;
     border-top: none;
     z-index: 1;
+} */
+
+/* Fullscreen menu styles */
+
+#menuList {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+    justify-content: center;
+    align-items: center;
 }
 
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+/* Close button styles */
+.menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 100px;
+    cursor: pointer;
+}
+
+/* Menu list styles */
 #menuList ul {
+    list-style: none;
+    text-align: center;
+}
+
+#menuList ul li {
+    margin: 20px 0;
+}
+
+#menuList ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+#menuList ul li a:hover {
+    color: #ccc; /* Hover effect */
+}
+
+/* #menuList ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -250,7 +312,7 @@ footer {
 #menuList ul li a {
     text-decoration: none;
     color: #333;
-}
+} */
 
 #logInButton {
     background: none;
@@ -312,6 +374,54 @@ footer {
 #logInForm input[type="submit"]:hover,
 #logInForm input[type="reset"]:hover {
     background-color: #0056b3;
+}
+
+/* --------------------------------------------------------- */
+/* Form styles */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-control input,
+.form-control button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-control input[type="submit"],
+.form-control input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-control input[type="submit"]:hover,
+.form-control input[type="reset"]:hover {
+    background-color: #0069d9;
+}
+
+/* Additional styles for better alignment and spacing */
+.form-control input[type="submit"],
+.form-control input[type="reset"] {
+    margin-right: 5px; /* Add space between buttons */
+    width: calc(50% - 5px); /* Adjust width to fit side by side */
+}
+
+/* Ensure the last element in form-control has margin-bottom for spacing */
+.form-control:last-child {
+    margin-bottom: 0;
 }
 
 

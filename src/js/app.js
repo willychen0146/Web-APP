@@ -4,11 +4,26 @@
 // const menuButton = $('#menuButton');
 // const menuList = $('#menuList');
 
-const menuButton = document.getElementById('menuButton');
-const menuList = document.getElementById('menuList');
+// const menuButton = document.getElementById('menuButton');
+// const menuList = document.getElementById('menuList');
 
-menuButton.addEventListener('click', function() {
-    menuList.classList.toggle('hidden');
+// menuButton.addEventListener('click', function() {
+//     menuList.classList.toggle('hidden');
+// });
+
+document.getElementById('menuButton').addEventListener('click', function() {
+    var menu = document.getElementById('menuList');
+    menu.style.display = 'flex'; // Show the menu
+    menu.style.animation = 'slideDown 0.5s ease forwards'; // Apply slide down animation
+});
+
+document.querySelector('.menu-close-btn').addEventListener('click', function() {
+    var menu = document.getElementById('menuList');
+    menu.style.animation = 'slideUp 0.5s ease forwards'; // Animate slide up
+    setTimeout(function() {
+        menu.style.display = 'none'; // Hide after animation
+        menu.style.animation = ''; // Reset animation property
+    }, 500); // Wait for animation to finish
 });
 
 const logInButton = document.getElementById('logInButton');

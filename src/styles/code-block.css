@@ -1,6 +1,10 @@
 /* code-block.css */
 /* container for the code editor and the problem description */
 /* --------------------------------------------------------- */
+footer p{
+    margin: 0;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
